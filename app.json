@@ -1,0 +1,30 @@
+{
+  "name": "Heroku-v2ray",
+  "description": "将v2ray部署在Heroku上",
+  "keywords": [
+    "v2ray VMess VLESS"
+  ],
+  "env": {
+    "PROTOCOL": {
+      "description": "协议VMess或VLESS，请填小写的vmess或vless",
+      "value": "vless",
+      "required": true
+    },
+    "UUID": {
+      "description": "用户的主ID",
+      "value": "3ee4f080-0344-4847-a328-98aad1ccf7cf",
+      "required": false
+    },
+    "WS_PATH": {
+      "description": "websocket路径",
+      "value": "/ray",
+      "required": true
+    }
+  },
+  "website": "https://github.com/tiykf93/vless",
+  "repository": "https://github.com/tiykf93/vless",
+  "stack": "container",
+  "features": [
+    "runtime-dyno-metadata"
+  ]
+}
